@@ -1,10 +1,9 @@
-import faker
 
-def get_sign_up_date():
-    fake = faker.Faker()
-    email = fake.email()
-    password = fake.password()
-    name = fake.name()
-    return email, password, name
+class user_data:
+
+    EMAIL = "ilme560@yandex.ru"
+    PASSWORD = "123456"
+    INVALID_PASSWORD = "12345"
+    INVALID_EMAIL = 'ilmeyandex.ru'
 
 

@@ -2,20 +2,14 @@ from selenium.webdriver.common.by import By
 
 class burger_locators:
 
-    # Тестовые данные для регистрации пользователя с паролем меньше 6 символов:
-    EMAIL = "ilme560@yandex.ru"
-    PASSWORD = "123456"
-    INVALID_PASSWORD = "12345"
-    INVALID_EMAIL = 'ilmeyandex.ru'
-
     # поле ввода Емейл на странице регистрации
-    EMAIL_INPUT_FIELD = By.XPATH, './/fieldset[2]/div/div/input[@name = "name"]'
+    EMAIL_INPUT_FIELD = By.XPATH, '//label[text()="Email"]/following-sibling::input'
 
     # поле ввода Пароля на странице регистрации
-    PASSWORD_INPUT_FIELD = By.XPATH, './/fieldset[3]/div/div/input[@name  = "Пароль"]'
+    PASSWORD_INPUT_FIELD = By.XPATH, '//label[text()="Пароль"]/following-sibling::input'
 
     # поле ввода Имени на странице регистрации
-    NAME_INPUT_FIELD = By.XPATH, './/fieldset[1]/div/div/input[@name = "name"]'
+    NAME_INPUT_FIELD = By.XPATH, '//label[text()="Имя"]/following-sibling::input'
 
     # кнопка Войти на странице регистрации
     BUTTON_LOGIN_IN_REG = By.XPATH, './/a[@href="/login"]'
